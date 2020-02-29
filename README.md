@@ -22,21 +22,21 @@ API:
 
 ```go
 // PkeyAlloc allocates a new pkey
-func PkeyAlloc() (Pkey, error)
+func PkeyAlloc() (Pkey, error) {}
 
 // PkeyFree frees a pkey previously allocated
-func PkeyFree(pkey Pkey) error
+func PkeyFree(pkey Pkey) error {}
 
 // PkeyMprotect tags pages within [addr, addr + len -1] with the given pkey.
 // Permission on page table can also be update at the same time.
 // Note that addr must be aligned to a page boundary.
-func PkeyMprotect(addr uintptr, len uint64, sysProt SysProt, pkey Pkey) error
+func PkeyMprotect(addr uintptr, len uint64, sysProt SysProt, pkey Pkey) error {}
 
 // WritePKRU updates the value of the PKRU
-func WritePKRU(prot PKRU)
+func WritePKRU(prot PKRU) {}
 
 // ReadPKRU returns the value of the PKRU
-func ReadPKRU() PKRU
+func ReadPKRU() PKRU {}
 ```
 
 Available constants
