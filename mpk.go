@@ -37,7 +37,7 @@ const (
 	SysProtR   SysProt = syscall.PROT_READ
 )
 
-// AllRightsPKRU is the default value of the PKRU that allows everything
+// AllRightsPKRU is the default value of the PKRU, that allows everything
 const AllRightsPKRU PKRU = 0
 
 // Mask
